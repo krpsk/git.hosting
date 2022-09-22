@@ -1,5 +1,9 @@
-1	
-		2
-				3
-					4
-						5
+HW 04. GitOps
+
+test action git
+
+- git fetch upstream
+- git rebase upstream/md-sa2-21-22
+- git push origin
+
+
