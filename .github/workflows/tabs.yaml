@@ -23,7 +23,7 @@ jobs:
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
             echo "$file was changed" >> report.log 2>&1
-            echo "Total tabs: `ls $file | xargs grep -c 'name'`" >> report.log 2>&1
+            echo "Total tabs: `ls $file | xargs grep -c '\t'`" >> report.log 2>&1
           done
 
       - name: Upload report
